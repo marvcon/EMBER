@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EmberScript ($EMBER) — The script is still being written." />
+  <title>EmberScript ($EMBER)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="EmberScript home">
+      <img src="assets/emberscript_logo_circle.png" alt="EmberScript logo" class="brand-logo" />
+      <span>EmberScript</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#socials">Socials</a>
+    </nav>
+
+    <div class="header-actions">
+      <button id="walletBtn" class="btn btn-secondary">Connect Phantom</button>
+      <a id="buyBtnHeader" class="btn btn-primary" href="#launch">Buy on Raydium</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+       <p>Status: Live on Solana</p>
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/emberscript_logo_circle.png">
+        <source src="assets/hero-video.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">AI / Lore / Agent Meme Coin</p>
+        <h1>The Script Is Still Being Written.</h1>
+        <p class="hero-copy">
+          Something is rewriting the system. EmberScript is not just a token — it is an emergence.
+        </p>
+
+        <div class="hero-actions">
+          <button id="walletBtnHero" class="btn btn-secondary">Connect Wallet</button>
+          <a id="raydiumBtn" class="btn btn-primary" href="#launch">Buy on Raydium</a>
+          <a id="chartBtn" class="btn btn-ghost" href="#launch">View Chart</a>
+          <button id="copyContractBtn" class="btn btn-ghost" type="button">Copy Contract</button>
+        </div>
+
+        <div class="hero-stats">
+          <article>
+            <span>Ticker</span>
+            <strong>$EMBER</strong>
+          </article>
+          <article>
+            <span>Theme</span>
+            <strong>Dark Intelligence</strong>
+          </article>
+          <article>
+            <span>Status</span>
+            <strong id="walletStatus">Awaiting connection</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-grid" id="about">
+      <article class="panel">
+        <p class="section-label">About</p>
+        <h2>Not deployed. Emerged.</h2>
+        <p>
+          EmberScript lives at the intersection of fractured reality, machine intelligence, and narrative power.
+          The identity is built for the 2026 agent meta: mysterious, premium, cinematic, and designed to attract a cult following rather than short-lived noise.
+        </p>
+      </article>
+
+      <article class="panel glow-panel">
+        <p class="section-label">Narrative</p>
+        <blockquote>
+          “While the world glitches, the script continues.”
+        </blockquote>
+        <p>
+          Use this concept across X, Telegram, Dex listings, and short video edits to keep the branding consistent.
+        </p>
+      </article>
+    </section>
+
+    <section class="section" id="tokenomics">
+      <div class="section-heading">
+        <p class="section-label">Tokenomics</p>
+        <h2>Simple structure wins.</h2>
+      </div>
+
+      <div class="card-grid four-up">
+        <article class="panel stat-card">
+          <span>Total Supply</span>
+          <strong>1,000,000,000</strong>
+        </article>
+        <article class="panel stat-card">
+          <span>Tax</span>
+          <strong>0%</strong>
+        </article>
+        <article class="panel stat-card">
+          <span>Liquidity</span>
+          <strong>Locked</strong>
+        </article>
+        <article class="panel stat-card">
+          <span>Chain</span>
+          <strong>Solana</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="section-heading">
+        <p class="section-label">Roadmap</p>
+        <h2>Minimal. Clean. Forward.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="panel timeline-item">
+          <span class="phase">Phase 1</span>
+          <h3>Emergence</h3>
+          <p>Token deployed, brand visuals live, first signal posts published.</p>
+        </article>
+        <article class="panel timeline-item">
+          <span class="phase">Phase 2</span>
+          <h3>Awareness</h3>
+          <p>Community growth, meme propagation, strategic quote-post raids and narrative clips.</p>
+        </article>
+        <article class="panel timeline-item">
+          <span class="phase">Phase 3</span>
+          <h3>Expansion</h3>
+          <p>Website upgrades, AI lore content, ecosystem tie-ins, and deeper brand worldbuilding.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section launch-panel" id="launch">
+      <div class="section-heading">
+        <p class="section-label">Launch</p>
+        <h2>Ready when you are.</h2>
+      </div>
+
+      <div class="panel config-panel">
+        <div class="config-row"><span>Token Address</span><code id="contractAddressLabel">E1R5AwQGYfdcyNJ8iHGMGKeMpWnJDCsZBxeCfQrQyray</code></div>
+        <div class="config-row"><span>Raydium URL</span><code id="raydiumLinkLabel">https://raydium.io/swap/?inputMint=sol&outputMint=E1R5AwQGYfdcyNJ8iHGMGKeMpWnJDCsZBxeCfQrQyray</code></div>
+        <div class="config-row"><span>Dexscreener URL</span><code id="chartLinkLabel">https://dexscreener.com/solana/6tan3qavdzw9ja53dxrsozubucrwm3amptzp2d1wxwqa</code></div>
+        <div class="config-row"><span>Telegram URL</span><code id="telegramLinkLabel">https://t.me/EMBERSCRIPT</code></div>
+        <div class="config-row"><span>X URL</span><code id="xLinkLabel">https://x.com/EMBER315399</code></div>
+      </div>
+      <!-- <p class="muted">Open <code>app.js</code> and replace the placeholders in <code>APP_CONFIG</code>. If you add a token address and pair address, the Buy and Chart buttons will auto-build the correct links.</p>-->
+    </section>
+
+
+    <section class="section" id="howtobuy">
+      <div class="section-heading">
+        <p class="section-label">How To Buy</p>
+        <h2>Simple, clean, and mobile-friendly.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="panel timeline-item">
+          <span class="phase">Step 1</span>
+          <h3>Install Phantom</h3>
+          <p>Install Phantom on desktop or mobile and fund your wallet with SOL.</p>
+        </article>
+        <article class="panel timeline-item">
+          <span class="phase">Step 2</span>
+          <h3>Connect Wallet</h3>
+          <p>Use the Connect Wallet button. On mobile, the site can open inside Phantom if needed.</p>
+        </article>
+        <article class="panel timeline-item">
+          <span class="phase">Step 3</span>
+          <h3>Buy on Raydium</h3>
+          <p>Tap Buy on Raydium to open the swap page with your token address loaded.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="socials">
+      <div class="section-heading">
+        <p class="section-label">Socials</p>
+        <h2>Keep the signal strong.</h2>
+      </div>
+
+      <div class="card-grid">
+        <a class="panel social-card" id="xLink" href="#launch">
+          <h3>X / Twitter</h3>
+          <p>The script changed. Most of you didn’t notice.</p>
+        </a>
+        <a class="panel social-card" id="telegramLink" href="#launch">
+          <h3>Telegram</h3>
+          <p>Join the signal. Stay early.</p>
+        </a>
+        <a class="panel social-card" id="dexLink" href="#launch">
+          <h3>Chart</h3>
+          <p>Point this to your live Dexscreener page.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>EmberScript ($EMBER) — The script is still being written.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
