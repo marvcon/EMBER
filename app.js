@@ -1,8 +1,8 @@
 const APP_CONFIG = {
-  tokenAddress: 'E1R5AwQGYfdcyNJ8iHGMGKeMpWnJDCsZBxeCfQrQyray',
-  pairAddress: 'E1R5AwQGYfdcyNJ8iHGMGKeMpWnJDCsZBxeCfQrQyray',
+  tokenAddress: '8B4m3x7Nifgi4QcLYLWRrLNg4CjXLPrAs56pSvRxjups',
+  pairAddress: '8B4m3x7Nifgi4QcLYLWRrLNg4CjXLPrAs56pSvRxjups',
   raydiumUrl: '',
-  dexscreenerUrl: 'https://dexscreener.com/solana/E1R5AwQGYfdcyNJ8iHGMGKeMpWnJDCsZBxeCfQrQyray',
+  dexscreenerUrl: 'https://dexscreener.com/solana/3jttvaexqyzedqecwxgd6phch6984vpbxd1dtnvwgtkb',
   telegramUrl: 'https://t.me/EMBERSCRIPT',
   xUrl: 'https://x.com/EMBER315399',
   phantomInstallUrl: 'https://phantom.app/'
