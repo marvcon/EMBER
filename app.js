@@ -38,7 +38,7 @@ function setWalletState(label) {
 function buildRaydiumUrl() {
   if (APP_CONFIG.raydiumUrl) return APP_CONFIG.raydiumUrl;
   if (!APP_CONFIG.tokenAddress || APP_CONFIG.tokenAddress === 'SET_TOKEN_ADDRESS') return '#';
-  return `https://jup.ag/swap?buy=So11111111111111111111111111111111111111112&sell=EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v${encodeURIComponent(APP_CONFIG.tokenAddress)}`;
+  return `https://jup.ag/spot?view=pulse${encodeURIComponent(APP_CONFIG.tokenAddress)}`;
 }
 
 function buildDexUrl() {
